@@ -1,6 +1,6 @@
 {
   "name": "less-bundle",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Bundle less css compiler into a single dist that could be used in web workers",
   "main": "index.js",
   "scripts": {
