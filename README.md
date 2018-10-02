@@ -3,6 +3,11 @@ less-bundle
 
 Bundle less css compiler into a single dist that could be used in web workers. You can find the output under the `dist` folder.
 
+Demo
+----
+
+[live REPL]()
+
 Usage
 -----
 
