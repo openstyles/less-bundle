@@ -6,7 +6,7 @@ Bundle less css compiler into a single dist that could be used in web workers. Y
 Demo
 ----
 
-[live REPL]()
+[live REPL](https://rawgit.com/openstyles/less-bundle/master/demo/)
 
 Usage
 -----
