@@ -14,11 +14,14 @@ export default {
   plugins: [
     resolve(),
     re({
-      patterns: [{
-        match: /list\.js$/,
-        test: "iterator.forEach(function(item)",
-        replace: "iterator.forEach(item =>"
-      }]
+      patterns: [
+        // https://github.com/less/less.js/issues/3313
+        {
+          match: /list\.js$/,
+          test: "iterator.forEach(function(item)",
+          replace: "iterator.forEach(item =>"
+        }
+      ]
     }),
     cjs({
       nested: true,
