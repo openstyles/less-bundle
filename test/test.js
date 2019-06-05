@@ -23,7 +23,7 @@ const NO_OPTIONS_DIRS = new Set([
 ]);
 
 describe("less test", () => {
-  const root = `${require.resolve("less/test")}/../css`;
+  const root = path.resolve(`${require.resolve("less/test")}/../css`);
   for (const file of fs.readdirSync(root, {withFileTypes: true})) {
     if (file.isDirectory()) {
       const subdir = `${root}/${file.name}`;
@@ -45,7 +45,7 @@ describe("less test", () => {
         // has options
         this.skip();
       }
-      const sourcePath = fullPath.replace("/css/", "/less/").replace(/\.css$/, ".less");
+      const sourcePath = fullPath.replace(/([\\/])css[\\/]/, "$1less$1").replace(/\.css$/, ".less");
       const expect = fs.readFileSync(fullPath, "utf8");
       const source = fs.readFileSync(sourcePath, "utf8");
       if (/@(import|plugin)/.test(source)) {
