@@ -4,7 +4,7 @@
   "description": "Bundle less css compiler into a single dist that could be used in web workers",
   "main": "index.js",
   "scripts": {
-    "test": "eslint **/*.js --cache && mocha",
+    "test": "eslint \"**/*.js\" --cache && mocha",
     "build": "rollup -c",
     "preversion": "npm test",
     "version": "npm run build && git add .",
@@ -27,15 +27,14 @@
   },
   "homepage": "https://github.com/openstyles/less-bundle#readme",
   "devDependencies": {
-    "eslint": "^5.6.1",
-    "less": "^3.8.1",
-    "mocha": "^5.2.0",
-    "rollup": "^0.66.2",
-    "rollup-plugin-cjs-es": "^0.7.0",
-    "rollup-plugin-external-globals": "^0.2.1",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-re": "^1.0.7",
-    "rollup-plugin-terser": "^3.0.0"
+    "eslint": "^5.16.0",
+    "less": "^3.9.0",
+    "mocha": "^6.1.4",
+    "rollup": "^1.14.1",
+    "rollup-plugin-cjs-es": "^0.8.0",
+    "rollup-plugin-external-globals": "^0.3.0",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-terser": "^5.0.0"
   },
   "eslintIgnore": [
     "dist"
