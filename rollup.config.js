@@ -1,5 +1,4 @@
 import cjs from "rollup-plugin-cjs-es";
-import re from "rollup-plugin-re";
 import resolve from "rollup-plugin-node-resolve";
 import {terser} from "rollup-plugin-terser";
 import globals from "rollup-plugin-external-globals";
@@ -13,16 +12,6 @@ export default {
   },
   plugins: [
     resolve(),
-    re({
-      patterns: [
-        // https://github.com/less/less.js/issues/3313
-        {
-          match: /list\.js$/,
-          test: "iterator.forEach(function(item)",
-          replace: "iterator.forEach(item =>"
-        }
-      ]
-    }),
     cjs({
       nested: true,
       exportType: {
