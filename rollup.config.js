@@ -24,10 +24,10 @@ export default {
     globals({
       promise: "null"
     }),
-    // terser({
-      // compress: {
-        // passes: 3
-      // }
-    // })
+    terser({
+      compress: {
+        passes: 3
+      }
+    })
   ]
 };
