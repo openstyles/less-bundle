@@ -1,5 +1,5 @@
-const Less = require("less/lib/less");
-const defaultOptions = require("less/lib/less/default-options");
+const Less = require("./test/less/packages/less/src/less");
+const defaultOptions = require("./test/less/packages/less/src/less/default-options");
 const less = new Less;
 less.PluginLoader = function(){};
 less.options = defaultOptions();
