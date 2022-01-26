@@ -21,6 +21,10 @@ less.render(code)
 Changelog
 ---------
 
+* 0.2.1 (Jan 26, 2022)
+
+  - Fix: move @rollup/plugin-json to dev-dependency.
+
 * 0.2.0 (Jan 26, 2022)
 
   - Bump less to 3f05b5c (4.1.2+)
