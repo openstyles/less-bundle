@@ -1,5 +1,6 @@
 import cjs from "rollup-plugin-cjs-es";
-import resolve from "rollup-plugin-node-resolve";
+import json from '@rollup/plugin-json';
+import resolve from "@rollup/plugin-node-resolve";
 import {terser} from "rollup-plugin-terser";
 import globals from "rollup-plugin-external-globals";
 
@@ -11,6 +12,7 @@ export default {
     name: "less"
   },
   plugins: [
+    json(),
     resolve(),
     cjs({
       nested: true,
