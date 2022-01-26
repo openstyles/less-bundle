@@ -21,6 +21,10 @@ less.render(code)
 Changelog
 ---------
 
+* 0.2.0 (Jan 26, 2022)
+
+  - Bump less to 3f05b5c (4.1.2+)
+
 * 0.1.0 (Oct 2, 2018)
 
   - Initial release.
